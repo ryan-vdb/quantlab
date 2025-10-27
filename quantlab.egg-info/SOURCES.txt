@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+quantlab.egg-info/PKG-INFO
+quantlab.egg-info/SOURCES.txt
+quantlab.egg-info/dependency_links.txt
+quantlab.egg-info/top_level.txt
+quantlab/algorithms/brainrot.py
+quantlab/analysis/backtester.py
+quantlab/analysis/evaluator.py
+quantlab/data/yf.py
