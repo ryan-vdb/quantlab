@@ -8,6 +8,3 @@ def priceData(stocks: list, length: int):
         end = date.today(),
     )
     return data["Close"]
-
-stocklist = ["AAPL","MSFT"]
-print(priceData(stocklist, 100))
