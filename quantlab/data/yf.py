@@ -6,5 +6,6 @@ def priceData(stocks: list, length: int):
         tickers = stocks,
         start = date.today() - timedelta(days = length),
         end = date.today(),
+        auto_adjust = True
     )
     return data["Close"]

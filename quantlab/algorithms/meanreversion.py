@@ -1,9 +1,5 @@
-from quantlab.data.yf import priceData
-from quantlab.data.tickers import tickers
 import numpy as np
 import pandas as pd
-
-data = priceData(tickers, 150)
 
 def meanReversion(data):
     results = {}
@@ -23,6 +19,7 @@ def meanReversion(data):
         current_price = s.iloc[-1]
         exp_current_price = exp_ps[-1]
         error = current_price - exp_current_price
+
         if error > 2 * error_threshold:
             results[col] = -100 / current_price
         elif error < -2 * error_threshold:
