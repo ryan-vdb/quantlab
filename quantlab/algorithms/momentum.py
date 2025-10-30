@@ -14,11 +14,8 @@ def momentum(data):
 
         if change > threshold:
             results[col] = 100 / current_price
-        elif change < threshold:
+        elif change < -threshold:
             results[col] = -100 / current_price
         else:
             continue
     return pd.Series(results, name = "shares")
-
-
-    

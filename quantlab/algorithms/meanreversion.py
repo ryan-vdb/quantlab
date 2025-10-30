@@ -27,4 +27,3 @@ def meanReversion(data):
         else:
             continue
     return pd.Series(results, name = "shares")
-
